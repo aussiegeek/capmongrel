@@ -1,0 +1,32 @@
+h1. capmongrel
+
+h1. &#x2192; 'capmongrel'
+
+
+h2. What
+A simple plugin for deploying with capistrano to a host running mongrel
+
+h2. Installing
+
+<pre syntax="ruby">sudo gem install capmongrel</pre>
+
+h2. The basics
+Add the a require line to your deploy.rb
+<pre syntax="ruby">require 'capmongrel'</pre>
+Have you mongrel_cluster.yml in the config directory on the server
+
+cap deploy, etc like normal
+
+h2. How to submit patches
+
+Read the "8 steps for fixing other people's code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/, and "How to use github and submit a patch":http://railsontherun.com/2008/3/3/how-to-use-github-and-submit-a-patch
+
+The code is on "GitHub":http://github.com/aussiegeek/capmongrel/tree/master feel free to fork and send me patches
+
+h2. License
+
+This code is free to use under the terms of the MIT license.
+
+h2. Contact
+
+Comments are welcome. Send an email to "Alan Harper":mailto:alan@aussiegeek.net email

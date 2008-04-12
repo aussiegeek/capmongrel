@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+      capmongrel
+  </title>
+  <script src="javascripts/rounded_corners_lite.inc.js" type="text/javascript"></script>
+<style>
+
+</style>
+  <script type="text/javascript">
+    window.onload = function() {
+      settings = {
+          tl: { radius: 10 },
+          tr: { radius: 10 },
+          bl: { radius: 10 },
+          br: { radius: 10 },
+          antiAlias: true,
+          autoPad: true,
+          validTags: ["div"]
+      }
+      var versionBox = new curvyCorners(settings, document.getElementById("version"));
+      versionBox.applyCornersToAll();
+    }
+  </script>
+</head>
+<body>
+<div id="main">
+
+    <h1>capmongrel</h1>
+    <div id="version" class="clickable" onclick='document.location = "http://rubyforge.org/projects/capmongrel"; return false'>
+      <p>Get Version</p>
+      <a href="http://rubyforge.org/projects/capmongrel" class="numbers">0.0.1</a>
+    </div>
+    <h1>&#x2192; &#8216;capmongrel&#8217;</h1>
+
+
+	<h2>What
+A simple plugin for deploying with capistrano to a host running mongrel</h2>
+
+
+	<h2>Installing</h2>
+
+
+	<p><pre class='syntax'><span class="ident">sudo</span> <span class="ident">gem</span> <span class="ident">install</span> <span class="ident">capmongrel</span></pre></p>
+
+
+	<h2>The basics
+Add the a require line to your deploy.rb
+<pre class='syntax'><span class="ident">require</span> <span class="punct">'</span><span class="string">capmongrel</span><span class="punct">'</span></pre>
+Have you mongrel_cluster.yml in the config directory on the server</h2>
+
+
+	<p>cap deploy, etc like normal</p>
+
+
+	<h2>How to submit patches</h2>
+
+
+	<p>Read the <a href="http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/">8 steps for fixing other people&#8217;s code</a>, and <a href="http://railsontherun.com/2008/3/3/how-to-use-github-and-submit-a-patch">How to use github and submit a patch</a></p>
+
+
+	<p>The code is on <a href="http://github.com/aussiegeek/capmongrel/tree/master">GitHub</a> feel free to fork and send me patches</p>
+
+
+	<h2>License</h2>
+
+
+	<p>This code is free to use under the terms of the <span class="caps">MIT</span> license.</p>
+
+
+	<h2>Contact</h2>
+
+
+	<p>Comments are welcome. Send an email to <a href="mailto:alan@aussiegeek.net">Alan Harper</a> email</p>
+    <p class="coda">
+      <a href="alan@aussiegeek.net">Alan Harper</a>, 12th April 2008<br>
+      Theme extended from <a href="http://rb2js.rubyforge.org/">Paul Battley</a>
+    </p>
+</div>
+
+<!-- insert site tracking codes here, like Google Urchin -->
+
+</body>
+</html>
